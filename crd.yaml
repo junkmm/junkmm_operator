@@ -1,0 +1,6 @@
+apiVersion: app.junkmm.site/v1
+kind: Echo
+metadata:
+  name: echo-sample
+spec:
+  command: "echo hello world!"

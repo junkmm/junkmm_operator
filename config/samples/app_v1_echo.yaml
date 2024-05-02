@@ -1,0 +1,9 @@
+apiVersion: app.junkmm.site/v1
+kind: Echo
+metadata:
+  labels:
+    app.kubernetes.io/name: hakjun-operator
+    app.kubernetes.io/managed-by: kustomize
+  name: echo-sample
+spec:
+  # TODO(user): Add fields here

@@ -1,0 +1,23 @@
+# permissions for end users to view echoes.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  labels:
+    app.kubernetes.io/name: hakjun-operator
+    app.kubernetes.io/managed-by: kustomize
+  name: echo-viewer-role
+rules:
+- apiGroups:
+  - app.junkmm.site
+  resources:
+  - echoes
+  verbs:
+  - get
+  - list
+  - watch
+- apiGroups:
+  - app.junkmm.site
+  resources:
+  - echoes/status
+  verbs:
+  - get
